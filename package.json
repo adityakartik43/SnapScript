@@ -12,6 +12,7 @@
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
     "@tailwindcss/vite": "^4.1.7",
+    "dotenv": "^16.5.0",
     "jspdf": "^3.0.1",
     "lucide-react": "^0.511.0",
     "pdf-parse": "^1.1.1",
