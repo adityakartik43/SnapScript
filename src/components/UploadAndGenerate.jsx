@@ -390,7 +390,7 @@ Organize the content using Markdown-style headings (e.g., ## Section Heading, ##
       {showDownloadButton && (
         <div className="mt-6">
             <button
-                className="bg-green-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:bg-purple-400"
+                className="bg-green-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 cursor-pointer disabled:opacity-50 disabled:bg-purple-400"
                 onClick={handleDownloadPdf}
                 disabled={isGeneratingPdf || !rawGeneratedNotes}
             >
