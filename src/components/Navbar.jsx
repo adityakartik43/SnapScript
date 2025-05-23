@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
 
         {/* Hamburger (Mobile) */}
-        <div className="lg:hidden text-white" onClick={toggleMenu}>
+        <div className="lg:hidden text-white hover:cursor-pointer" onClick={toggleMenu}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </div>
 
@@ -22,11 +22,10 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center space-x-8 text-white font-medium">
           <li className="hover:text-blue-300 cursor-pointer">Home</li>
           <li className="hover:text-blue-300 cursor-pointer">Our Services</li>
-          <li className="hover:text-blue-300 cursor-pointer">Courses</li>
           <li className="hover:text-blue-300 cursor-pointer">Resource Hub</li>
           <li className="hover:text-blue-300 cursor-pointer">About</li>
           <li>
-            <button className="bg-blue-500 hover:bg-pink-600 duration-500 text-white font-semibold px-4 py-2 rounded">
+            <button className="bg-blue-500 hover:bg-pink-600 duration-500 cursor-pointer text-white font-semibold px-4 py-2 rounded">
               Contact Us
             </button>
           </li>
@@ -42,7 +41,6 @@ const Navbar = () => {
         <ul className="flex flex-col space-y-4 mt-4 text-white font-medium">
           <li className="hover:text-blue-300 cursor-pointer">Home</li>
           <li className="hover:text-blue-300 cursor-pointer">Our Services</li>
-          <li className="hover:text-blue-300 cursor-pointer">Courses</li>
           <li className="hover:text-blue-300 cursor-pointer">Resource Hub</li>
           <li className="hover:text-blue-300 cursor-pointer">About</li>
           <li>
