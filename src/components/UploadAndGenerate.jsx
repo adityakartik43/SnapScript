@@ -313,7 +313,7 @@ Organize the content using Markdown-style headings (e.g., ## Section Heading, ##
   const isLoading = isLoadingPdf || isLoadingGemini || isGeneratingPdf;
 
   return (
-    <div className="bg-[#23236a] m-10 rounded-2xl shadow-lg p-8 flex flex-col items-center w-full max-w-3xl min-h-[80vh]">
+    <div className="bg-[#313187] m-10 rounded-2xl shadow-lg p-8 flex flex-col items-center w-full max-w-3xl min-h-[80vh]">
       <h1 className="text-4xl font-bold mb-2 text-white">Get Your Notes</h1>
       <p className="text-lg text-gray-300 mb-6 text-center max-w-xl">
         Upload your syllabus PDF to generate smart notes using AI.
@@ -390,7 +390,7 @@ Organize the content using Markdown-style headings (e.g., ## Section Heading, ##
       {showDownloadButton && (
         <div className="mt-6">
             <button
-                className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:bg-purple-400"
+                className="bg-green-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-lg text-xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:bg-purple-400"
                 onClick={handleDownloadPdf}
                 disabled={isGeneratingPdf || !rawGeneratedNotes}
             >
