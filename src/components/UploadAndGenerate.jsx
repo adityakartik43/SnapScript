@@ -1,16 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
 import { FaGoogleDrive, FaDropbox } from "react-icons/fa";
 import * as pdfjsLib from 'pdfjs-dist/build/pdf';
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import jsPDF from 'jspdf';
 
-
-// --- IMPORTANT ---
-// Ensure this API key is correct and valid for the Gemini API via @google/generative-ai
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API;
-// --- --- --- ---
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'; // Ensure this path is correct
+// Set worker source for PDF.js
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;// Ensure this path is correct
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 // Using the model name you provided. Ensure it's accessible with your key.
